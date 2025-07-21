@@ -1,0 +1,29 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-header {
+  height: 10vh;
+  background: #222;
+  color: white;
+}
+
+main {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  background: #f8f8f8;
+}
+
+app-footer {
+  height: 10vh;
+  background: #333;
+  color: white;
+}
