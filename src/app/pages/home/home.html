@@ -1,0 +1,8 @@
+<app-header></app-header>
+<ul>
+   <li>
+    @for (persona of personas; track $index) {
+        <h2>{{persona.nombre}}</h2>
+    }
+   </li>
+</ul>
