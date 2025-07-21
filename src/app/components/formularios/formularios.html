@@ -1,0 +1,32 @@
+<p>formularios works!</p>
+
+<h1>Reactivos formularios</h1>
+
+<form [formGroup]="movieForm" (ngSubmit)="onSubmit()" novalidate>
+  <div>
+    <label for="name">Nombre</label>
+    <input type="text"
+        id="name"
+        formControlName="name"
+        required
+        [class.is-invalid]="movieForm.get('name')?.invalid && movieForm.get('name')?.touched"
+    />
+    <label for="name">director</label>
+    <input type="text"
+        id="director"
+        formControlName="director"
+        required
+        [class.is-invalid]="movieForm.get('name')?.invalid && movieForm.get('name')?.touched"
+    />
+    <br>
+
+    <label for="name">duracion</label>
+    <input type="text"
+        id="duration"
+        formControlName="duration"
+        required
+        [class.is-invalid]="movieForm.get('name')?.invalid && movieForm.get('name')?.touched"
+    />
+  </div>
+    <button type="submit" [disabled]="movieForm.invalid">Enviar</button>
+</form>

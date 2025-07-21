@@ -1,0 +1,61 @@
+<main class="main-content bg-gray-50 bg-opacity-90">
+  <div class="container py-24">
+    <div class="login-container max-w-[500px] mx-auto bg-white rounded-12 p-24">
+      <div class="text-center mb-16">
+        <img src="assets/images/logo.png" alt="Toku Logo" class="h-[50px] mx-auto" />
+      </div>
+      <h2 class="login-title text-20 font-semibold mb-16 text-center">
+        Iniciar sesión
+      </h2>
+      <form class="space-y-12">
+        <div>
+          <label for="email" class="form-label block mb-2 text-gray-700 text-sm">
+            Correo electrónico
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8 focus:border-main-500 focus:ring-1 focus:ring-main-500 transition-colors"
+            placeholder="Ingresa tu correo"
+            required
+          />
+        </div>
+        <div class="mt-8">
+          <label for="password" class="form-label block mb-2 text-gray-700 text-sm">
+            Contraseña
+          </label>
+          <input
+            type="password"
+            id="password"
+            class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8 focus:border-main-500 focus:ring-1 focus:ring-main-500 transition-colors"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+        </div>
+        <div class="flex-between items-center">
+          <div class="flex items-center">
+            <input type="checkbox" id="remember" class="form-checkbox h-16 w-16" />
+            <label for="remember" class="ms-8 text-sm">Recordarme</label>
+          </div>
+          <a href="#" class="text-sm text-main-600 hover-text-decoration-underline">
+            ¿Olvidaste tu contraseña?
+          </a>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary w-full py-8 text-sm bg-main-600 text-white rounded-8 hover:bg-main-700 transition-colors duration-200"
+        >
+          Iniciar sesión
+        </button>
+      </form>
+      <div class="text-center mt-16">
+        <p class="text-gray-500 text-sm">
+          ¿No tienes una cuenta?
+          <a href="register.html" class="text-main-600 hover-text-decoration-underline">
+            Regístrate
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
